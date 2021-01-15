@@ -1,0 +1,307 @@
+@font-face {
+  src: url("../Fonts/Nunito-Light.ttf");
+  font-family: nuno;
+}
+
+@font-face {
+  src: url("../Fonts/Poppins-Regular.ttf");
+  font-family: Poppins;
+}
+
+@font-face {
+  src: url("../Fonts/NanumGothic-Bold.ttf");
+  font-family: Gothic;
+}
+
+@font-face {
+  src: url("../Fonts/Spartan-VariableFont_wght.ttf");
+  font-family: Spartan;
+}
+
+@font-face {
+  src: url("../Fonts/Poppins-SemiBold.ttf");
+  font-family: PoppinsB;
+}
+
+@font-face {
+  src: url("../Fonts/RobotoSlab-VariableFont_wght.ttf");
+  font-family: Robot;
+}
+
+@font-face {
+  src: url("../Fonts/PragatiNarrow-Regular.ttf");
+  font-family: Pragati;
+}
+
+@media (min-width: 500px) {
+  body {
+    height: 100vh;
+    width: 90vw;
+    margin: 0 auto;
+  }
+  #upper-layer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    padding: 30px 0;
+  }
+  #upper-layer header {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    -webkit-box-flex: 2;
+        -ms-flex: 2 1 200px;
+            flex: 2 1 200px;
+  }
+  #upper-layer header h1 {
+    margin: 0;
+    font-size: 30px;
+  }
+  #upper-layer article {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 300px;
+            flex: 1 1 300px;
+  }
+  #upper-layer article h2 {
+    font-family: Poppins;
+    font-size: 27px;
+    margin: 0;
+  }
+  #upper-layer article p {
+    font-family: Pragati;
+    font-size: 20px;
+    line-height: 1.3;
+    margin: 0;
+    padding: 10px  0;
+  }
+  .pic-con {
+    position: relative;
+    width: 100%;
+  }
+  .pic-con img {
+    width: 80%;
+  }
+  .pic-con p {
+    position: absolute;
+    top: 38px;
+    right: -19px;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    margin: 0;
+    font-size: 15px;
+    font-family: Robot;
+  }
+  .pic-con .text {
+    position: absolute;
+    top: 65px;
+    right: -51px;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    margin: 0;
+    font-size: 15px;
+    font-family: Robot;
+  }
+  .pic-con .text2 {
+    position: absolute;
+    top: 45px;
+    right: -32px;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    margin: 0;
+    font-size: 15px;
+    font-family: Robot;
+  }
+  .pic-con .text4 {
+    position: absolute;
+    top: 40px;
+    right: -27px;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    margin: 0;
+    font-size: 15px;
+    font-family: Robot;
+  }
+  .pic-ref-con > p {
+    font-family: PoppinsB;
+    font-size: 19px;
+    margin: 0;
+    padding-top: 20px;
+  }
+  #main-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    grid-gap: 150px 55px;
+  }
+  .translate {
+    -webkit-transform: translateY(150px);
+            transform: translateY(150px);
+  }
+  footer {
+    width: auto;
+    padding-bottom: 50px;
+    text-align: center;
+    font-family: Poppins;
+    color: gray;
+  }
+}
+
+@media (max-width: 500px) {
+  body {
+    width: 90vw;
+    margin: 0 auto;
+    overflow-y: scroll;
+  }
+  #upper-layer {
+    padding: 30px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: column nowrap;
+            flex-flow: column nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  h1 {
+    margin: 0;
+    font-size: 45px;
+    padding: 20px 0;
+  }
+  article {
+    padding: 20px 0;
+  }
+  article h2 {
+    font-family: Poppins;
+    font-size: 20px;
+    margin: 0;
+  }
+  article p {
+    font-family: Pragati;
+    font-size: 23px;
+    line-height: 1.3;
+    margin: 0;
+    padding: 10px  0;
+  }
+  .pic-con {
+    position: relative;
+    width: 100%;
+  }
+  .pic-con img {
+    width: 70%;
+  }
+  .pic-con p {
+    position: absolute;
+    top: 38px;
+    right: -19px;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    margin: 0;
+    font-size: 15px;
+    font-family: Robot;
+  }
+  .pic-con .text {
+    position: absolute;
+    right: -19px;
+    top: 50px;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    margin: 0;
+    font-size: 12px;
+    font-family: Robot;
+  }
+  .pic-con .text2 {
+    position: absolute;
+    right: -4px;
+    top: 35px;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    margin: 0;
+    font-size: 12px;
+    font-family: Robot;
+  }
+  .pic-con .text3 {
+    position: absolute;
+    right: 6px;
+    top: 25px;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    margin: 0;
+    font-size: 12px;
+    font-family: Robot;
+  }
+  .pic-con .text4 {
+    position: absolute;
+    right: -1px;
+    top: 33px;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    margin: 0;
+    font-size: 12px;
+    font-family: Robot;
+  }
+  .pic-con .text5 {
+    position: absolute;
+    right: 4px;
+    top: 30px;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    margin: 0;
+    font-size: 12px;
+    font-family: Robot;
+  }
+  .pic-con .text6 {
+    position: absolute;
+    right: 5px;
+    top: 30px;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    margin: 0;
+    font-size: 12px;
+    font-family: Robot;
+  }
+  #main-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+    grid-gap: 60px 5px;
+  }
+  .down {
+    -webkit-transform: translateY(60px);
+            transform: translateY(60px);
+  }
+  .pic-ref-con > p {
+    font-family: PoppinsB;
+    font-size: 17px;
+    margin: 0;
+    padding-top: 20px;
+  }
+  footer {
+    position: relative;
+    bottom: -150px;
+    width: auto;
+    padding-bottom: 20px;
+    text-align: center;
+    font-family: Poppins;
+    color: gray;
+  }
+}
+/*# sourceMappingURL=style.css.map */
